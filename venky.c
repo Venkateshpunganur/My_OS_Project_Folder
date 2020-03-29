@@ -40,7 +40,41 @@ int next_seating_position = 0;
 int next_teaching_position = 0;
 
 int ta_sleeping_flag = 0;
+int isNumber(char number[])
 
+{
+
+    int i;
+
+		for ( i = 0 ; number[i] != 0; i++ )
+
+    {
+
+        if (!isdigit(number[i]))
+
+            return 0;
+
+    }
+
+    return 1;
+
+}
+
+
+
+int isWaiting( int student_id ) {
+
+	int i;
+
+	for ( i = 0; i < 3; i++ ) {
+
+		if ( wt_rm_chrs[i] == student_id ) { return 1; }
+
+	}
+
+	return 0;
+
+}
 
 
 int main( int argc, char **argv ){
@@ -128,3 +162,6 @@ int main( int argc, char **argv ){
 	return 0;
 
 }
+
+
+
