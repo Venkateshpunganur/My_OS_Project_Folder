@@ -9,7 +9,6 @@
 #include <semaphore.h>
 
 
-
 void* _std_acts( void* student_id );
 
 void* teach_acts();
