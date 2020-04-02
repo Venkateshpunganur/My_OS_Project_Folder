@@ -14,13 +14,9 @@ void* _std_acts( void* student_id );
 
 void* teach_acts();
 
-
-
 #define N_CHAIRS 3
 
 #define STD_DEF 5
-
-
 
 sem_t sem_students;
 
